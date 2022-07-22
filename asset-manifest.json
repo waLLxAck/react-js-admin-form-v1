@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-js-admin-form-v1/static/css/main.87d8345b.css",
+    "main.js": "/react-js-admin-form-v1/static/js/main.3a07c59a.js",
+    "static/js/787.1cd43ffb.chunk.js": "/react-js-admin-form-v1/static/js/787.1cd43ffb.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/react-js-admin-form-v1/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/react-js-admin-form-v1/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "index.html": "/react-js-admin-form-v1/index.html",
+    "main.87d8345b.css.map": "/react-js-admin-form-v1/static/css/main.87d8345b.css.map",
+    "main.3a07c59a.js.map": "/react-js-admin-form-v1/static/js/main.3a07c59a.js.map",
+    "787.1cd43ffb.chunk.js.map": "/react-js-admin-form-v1/static/js/787.1cd43ffb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87d8345b.css",
+    "static/js/main.3a07c59a.js"
+  ]
+}
