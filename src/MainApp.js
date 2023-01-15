@@ -13,7 +13,15 @@ export default function MainApp() {
     const [salaryFormInvisible, setSalaryFormInvisible] = useState(false);
     const [age, setAge] = useState(0);
     const [contracts, setContracts] = useState([]);
+    const [selectedContract, setSelectedContract] = useState(null)
     useEffect(setOptions, [age])
+    useEffect(something, [selectedContract])
+
+    function something() {
+        if (document.getElementById("dropDownContracts").value !== null) {
+            console.log(selectedContract)
+        }
+    }
 
     function setOptions() {
         function filterContracts(contract) {
@@ -115,10 +123,9 @@ export default function MainApp() {
                     </div>
                 </div>
 
-
                 <Form.Group className="mb-3" >
                     <Form.Label >Available contracts</Form.Label>
-                    <SelectReport options={contracts} />
+                    <SelectReport options={contracts} onChange={something} />
                 </Form.Group>
 
                 <StandardFormGroup hidden={salaryFormInvisible} labelText="Salary" formControlType="number" formControlPlaceholder="12500" formControlMax="21000" textMuted="Salary shouldn't exceed £21,000." />
@@ -139,9 +146,6 @@ export default function MainApp() {
                         </div>
                     </div>
                 </Form.Group>
-                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="No worries" />
-                </Form.Group> */}
 
             </Form>
         </div>

@@ -3,6 +3,6 @@ import Select from 'react-select'
 
 export default function SelectReport(props) {
     return (
-        <Select options={props.options} />
+        <Select id="dropDownContracts" options={props.options} onChange={props.onChange} />
     )
 }
